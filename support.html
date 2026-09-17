@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Parked</title>
+    <style>
+        :root {
+            --text: #1c1c1e;
+            --muted: #6e6e73;
+            --bg: #ffffff;
+            --accent: #0a84ff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #f2f2f7;
+                --muted: #98989d;
+                --bg: #000000;
+                --accent: #0a84ff;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 60px 24px 80px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin: 0 0 8px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 40px 0 12px;
+        }
+        p {
+            margin: 0 0 16px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .muted {
+            color: var(--muted);
+            font-size: 15px;
+        }
+        footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid var(--muted);
+            opacity: 0.4;
+        }
+        .back {
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">← Back</a>
+        
+        <h1>Support</h1>
+        <p class="muted">We're a small team. We read every message.</p>
+
+        <p>For anything — a bug, a question, a feature request, or just to say hi — email <a href="mailto:hello@parked.app">hello@parked.app</a>.</p>
+
+        <h2>How do I start a session?</h2>
+        <p>Pick a category and a timer (or leave it on "P" for stopwatch mode), then flip your phone face-down. Parked starts tracking automatically. Pick your phone up when you're done.</p>
+
+        <h2>Sessions under 1 minute</h2>
+        <p>Sessions shorter than a minute can't be saved — they're almost always an accidental brush of the phone, not a real focus session.</p>
+
+        <h2>Calendar sync isn't working</h2>
+        <p>Check that Parked has calendar access: open Settings → Privacy &amp; Security → Calendars → Parked, and make sure it's allowed. If you've just enabled calendar sync in the app, iOS may have asked for permission — make sure you tapped Allow.</p>
+
+        <h2>Shortcuts aren't running</h2>
+        <p>In the Shortcuts app, tap the shortcut you're using and make sure each action has "Show When Run" turned off. Otherwise iOS stops the shortcut to show a preview, which can't be dismissed while your phone is face-down.</p>
+
+        <h2>Managing my subscription</h2>
+        <p>Subscriptions are managed by Apple. To cancel, open iPhone Settings → [your name] → Subscriptions → Parked. You'll keep access until the end of the current billing period.</p>
+
+        <h2>Restoring a purchase</h2>
+        <p>On the Parked Pro screen, tap "Restore Purchases." If you're signed in with the same Apple ID you used to subscribe, your access will return immediately.</p>
+
+        <h2>Where's my data stored?</h2>
+        <p>All your sessions live on your iPhone. We never see them. You can export your history to CSV from the History screen if you want a backup.</p>
+
+        <footer>
+            <p class="muted">© 2026 Parked</p>
+        </footer>
+    </div>
+</body>
+</html>
