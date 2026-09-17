@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parked — Focus by putting your phone down</title>
+    <style>
+        :root {
+            --text: #1c1c1e;
+            --muted: #6e6e73;
+            --bg: #ffffff;
+            --accent: #0a84ff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #f2f2f7;
+                --muted: #98989d;
+                --bg: #000000;
+                --accent: #0a84ff;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 60px 24px 80px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin: 0 0 8px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 40px 0 12px;
+        }
+        p {
+            margin: 0 0 16px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .muted {
+            color: var(--muted);
+            font-size: 15px;
+        }
+        nav {
+            display: flex;
+            gap: 24px;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--muted);
+        }
+        nav a {
+            font-weight: 500;
+        }
+        footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid var(--muted);
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Parked</h1>
+        <p class="muted">Focus by putting your phone down</p>
+
+        <p>Parked turns your phone's accelerometer into a focus timer. Flip it face-down to start, pick it up when you're done. Each session becomes a ticket with your category and notes — collectible proof of your focus.</p>
+
+        <h2>How it works</h2>
+        <p>Choose a category and timer, flip your phone face-down, and start working. Parked tracks how long it stays down. When you pick it up, you get a ticket with the time, category, and optional handwritten annotation. Sync to your calendar, share the tickets, or just collect them.</p>
+
+        <h2>Features</h2>
+        <p>• Categories with custom colors<br>
+        • Live ticket preview with handwriting annotation<br>
+        • Apple Calendar integration<br>
+        • Shortcuts support<br>
+        • History with search and export<br>
+        • Completely private — nothing leaves your phone</p>
+
+        <h2>Privacy</h2>
+        <p>Your session history, preferences, and all annotations stay on your iPhone. We never collect, transmit, or store any of your data. Calendar syncs go straight to your own Apple Calendar using EventKit. No analytics, no tracking, no ads.</p>
+
+        <nav>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
+        </nav>
+
+        <footer>
+            <p class="muted">© 2026 Parked</p>
+        </footer>
+    </div>
+</body>
+</html>
