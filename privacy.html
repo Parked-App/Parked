@@ -9,12 +9,14 @@
             --text: #1c1c1e;
             --muted: #6e6e73;
             --bg: #ffffff;
+            --accent: #0a84ff;
         }
         @media (prefers-color-scheme: dark) {
             :root {
                 --text: #f2f2f7;
                 --muted: #98989d;
                 --bg: #000000;
+                --accent: #0a84ff;
             }
         }
         * { box-sizing: border-box; }
@@ -47,9 +49,11 @@
             margin: 0 0 16px;
         }
         a {
-            color: inherit;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
             text-decoration: underline;
-            text-underline-offset: 3px;
         }
         .muted {
             color: var(--muted);
@@ -61,10 +65,16 @@
             border-top: 1px solid var(--muted);
             opacity: 0.4;
         }
+        .back {
+            display: inline-block;
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <a href="index.html" class="back">← Back</a>
+        
         <h1>Privacy Policy</h1>
         <p class="muted">Last updated: September 2026</p>
 
@@ -85,8 +95,8 @@
         <h2>Children</h2>
         <p>Parked does not knowingly collect any data from anyone, including children under 13.</p>
 
-        <h2>Contact</h2>
-        <p>Questions? Email <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>.</p>
+        <h2>Questions</h2>
+        <p>Questions? See our <a href="support.html">Support</a> page or email <a href="mailto:hello@parked.app">hello@parked.app</a>.</p>
 
         <footer>
             <p class="muted">© 2026 Parked</p>
