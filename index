@@ -99,8 +99,8 @@
         <p>Your session history, preferences, and all annotations stay on your iPhone. We never collect, transmit, or store any of your data. Calendar syncs go straight to your own Apple Calendar using EventKit. No analytics, no tracking, no ads.</p>
 
         <nav>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="support.html">Support</a>
+            <a href="privacy">Privacy Policy</a>
+            <a href="support">Support</a>
         </nav>
 
         <footer>
